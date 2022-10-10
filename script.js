@@ -11,8 +11,13 @@ function divGrid(number){
         newRow.setAttribute('id',row)
         newRow.setAttribute('class', 'divGrid')
         newRow.style.cssText = 'width: ' + width + 'px'
+        newRow.addEventListener('mouseover', (event) => {
+            event.target.style.backgroundColor = "purple";
+        })
         container.appendChild(newRow);
     }
 }
 
-divGrid(32)
+divGrid(16)
+
+
