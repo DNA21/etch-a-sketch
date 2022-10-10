@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="container">
+
+    <div id="title">
+        <h1>Etch A Sketch</h1>
+    </div>
+    <div id="body">
+        <div id="game-settings">
+            <input type="range" min="4" max="64" value="16" class="slider" id="grid-slider">
+            <div id="num-output"></div>
+        </div>
+        <div id="container"></div>
     </div>
 
     <script src="script.js"></script>
